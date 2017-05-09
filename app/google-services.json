@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1065470440393",
+    "firebase_url": "https://commenta-5f0d3.firebaseio.com",
+    "project_id": "commenta-5f0d3",
+    "storage_bucket": "commenta-5f0d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065470440393:android:8b451dfa62f3048f",
+        "android_client_info": {
+          "package_name": "tr.edu.dogus.commenta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065470440393-tk196djti71pqft2f4n32709tdoechh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsfwrnevsdWl5oYYjNITYClq_d6vLpTbE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

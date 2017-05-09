@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/commente_status_bar"
+    tools:context="tr.edu.dogus.commenta.activity.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Commenta"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:text="Mekanlara konuma göre yorum yapma platformu."
+        android:layout_marginBottom="15dp"/>
+
+
+</LinearLayout>
