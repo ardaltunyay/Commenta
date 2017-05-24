@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/register_background"
     tools:context="tr.edu.dogus.commenta.activity.RegisterActivity">
 
     <LinearLayout
@@ -18,10 +18,11 @@
         android:paddingTop="20dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:weightSum="1">
 
         <ImageView
-            android:id="@+id/imageView"
             android:layout_width="260dp"
             android:layout_height="141dp"
             android:src="@drawable/ekstra" />
@@ -33,60 +34,60 @@
             android:textSize="18dp"
             android:text="Mekanlara konuma göre yorum yapma platformu."
             android:layout_marginBottom="10dp"/>
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_register"
                 android:hint="@string/email"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="10dp"/>
 
-        </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:focusableInTouchMode="true"
+                android:background="@drawable/btn_register"
                 android:hint="@string/hint_password"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
                 android:imeActionId="@+id/login"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:textColor="@android:color/white" />
 
-        </android.support.design.widget.TextInputLayout>
+
 
         <Button
-            android:id="@+id/sign_up_button"
+            android:id="@+id/btnSignUp"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="#38ffffff"
+            android:background="#66b266"
             android:text="@string/action_sign_in_short"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
 
         <!-- Link to Login Screen -->
 
         <Button
-            android:id="@+id/sign_in_button"
+            android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:background="#38ffffff"
+            android:background="#007ee5"
             android:text="@string/btn_link_to_login"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -100,14 +101,5 @@
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="20dp"
         android:visibility="gone" />
-
-
-
-
-
-
-
-
-
 
 </android.support.design.widget.CoordinatorLayout>

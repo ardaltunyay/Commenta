@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="tr.edu.dogus.commenta.activity.MainActivity">
 
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:background="@color/commente_status_bar"
+        android:text="@string/app_name"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <LinearLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/old_email"
@@ -58,14 +67,13 @@
             android:inputType="textPassword"
             android:maxLines="1"
             android:singleLine="true" />
-
         <Button
             android:id="@+id/changeEmail"
             style="?android:textAppearanceSmall"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="#fdef14"
+            android:background="#36393e"
             android:text="@string/btn_change"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -73,14 +81,13 @@
         <Button
             android:id="@+id/changePass"
             style="?android:textAppearanceSmall"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="#fdef14"
+            android:background="#36393e"
             android:text="@string/btn_change"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
-
         <Button
             android:id="@+id/send"
             style="?android:textAppearanceSmall"
@@ -108,49 +115,70 @@
             android:text="@string/btn_remove"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
         <Button
             android:id="@+id/change_email_button"
             style="?android:textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:background="#3b8cab"
+            android:textColor="@color/white"
+            android:layout_height="100dp"
             android:layout_marginTop="16dp"
             android:text="@string/change_email"
             android:textStyle="bold" />
-
         <Button
             android:id="@+id/change_password_button"
             style="?android:textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:background="#3b8cab"
             android:layout_marginTop="16dp"
             android:text="@string/change_password"
             android:textStyle="bold" />
 
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
         <Button
             android:id="@+id/sign_out"
             style="?android:textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="#fb003f"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ff1919"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
             android:text="@string/btn_sign_out"
-
-            android:textColor="@android:color/white"
             android:textStyle="bold" />
-
         <Button
             android:id="@+id/konumbul"
             style="?android:textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
             android:background="#1a1aff"
             android:text="Konum Bul"
-            android:textColor="@android:color/white"
             android:textStyle="bold" />
 
 
     </LinearLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

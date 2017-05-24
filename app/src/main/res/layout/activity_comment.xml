@@ -94,12 +94,32 @@
 
     </LinearLayout>
 
-    <ListView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="3dp"
+        android:background="@color/commente_status_bar"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="2">
 
-    </ListView>
+        <LinearLayout
+            android:id="@+id/llComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <EditText
         android:id="@+id/etComment"

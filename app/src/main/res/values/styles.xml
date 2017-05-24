@@ -10,6 +10,7 @@
 
     <style name="Commenta" parent="Theme.AppCompat.Light.NoActionBar" >
         <item name="colorPrimary">@color/commente_status_bar</item>
+        <item name="colorAccent">@color/commente_status_bar</item>
     </style>
 
 </resources>

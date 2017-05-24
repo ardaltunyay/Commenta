@@ -12,5 +12,7 @@
     <style name="Commenta" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:statusBarColor">@color/commente_status_bar</item>
         <item name="colorPrimary">@color/commente_status_bar</item>
+        <item name="colorAccent">@color/commente_status_bar</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
     </style>
 </resources>

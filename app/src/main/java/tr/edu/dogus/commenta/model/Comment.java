@@ -6,6 +6,7 @@ package tr.edu.dogus.commenta.model;
 
 public class Comment {
     private String userId;
+    private String userMail;
     private String venueId;
     private String comment;
     private String date;
@@ -14,11 +15,20 @@ public class Comment {
 
     }
 
-    public Comment(String userId,String venueId, String comment, String date) {
+    public Comment(String userId,String venueId, String comment, String date, String userMail) {
         setUserId(userId);
         setVenueId(venueId);
         setComment(comment);
         setDate(date);
+        setUserMail(userMail);
+    }
+
+    public String getUserMail() {
+        return userMail;
+    }
+
+    public void setUserMail(String userMail) {
+        this.userMail = userMail;
     }
 
     public String getVenueId() {

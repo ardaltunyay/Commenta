@@ -22,7 +22,7 @@ import tr.edu.dogus.commenta.R;
 
 public class RegisterActivity extends AppCompatActivity{
 
-    private EditText inputEmail,inputPassword;
+    private EditText etEmail,etPassword;
     private Button btnSignIn,btnSignUp;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
@@ -35,10 +35,10 @@ public class RegisterActivity extends AppCompatActivity{
         setContentView(R.layout.activity_register);
 
         auth=FirebaseAuth.getInstance();
-        btnSignIn=(Button) findViewById(R.id.sign_in_button);
-        btnSignUp=(Button) findViewById(R.id.sign_up_button);
-        inputEmail=(EditText) findViewById(R.id.email);
-        inputPassword=(EditText) findViewById(R.id.password);
+        btnSignIn=(Button) findViewById(R.id.btnSignIn);
+        btnSignUp=(Button) findViewById(R.id.btnSignUp);
+        etEmail=(EditText) findViewById(R.id.etEmail);
+        etPassword=(EditText) findViewById(R.id.etPassword);
         progressBar=(ProgressBar) findViewById(R.id.progressBar);
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
@@ -51,8 +51,8 @@ public class RegisterActivity extends AppCompatActivity{
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email=inputEmail.getText().toString().trim();
-                String password=inputPassword.getText().toString().trim();
+                String email=etEmail.getText().toString().trim();
+                String password=etPassword.getText().toString().trim();
 
 
                 if(TextUtils.isEmpty(email))
