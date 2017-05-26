@@ -1,6 +1,5 @@
 package tr.edu.dogus.commenta.activity;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -11,8 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,11 +22,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.List;
 import java.util.Locale;
 
 import tr.edu.dogus.commenta.R;
-import tr.edu.dogus.commenta.adapter.CommentAdapter;
 import tr.edu.dogus.commenta.model.Comment;
 
 public class CommentActivity extends AppCompatActivity implements View.OnClickListener {
@@ -171,14 +166,14 @@ public class CommentActivity extends AppCompatActivity implements View.OnClickLi
 
                 dbRefWithKey.setValue(new Comment(userId,venueId,comment,date,userMail));
 
-                Toast.makeText(CommentActivity.this, "Yorumunuz gönderildi.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CommentActivity.this, "Comments posted.", Toast.LENGTH_SHORT).show();
                 etComment.setText("");
 
-                comment_list();
+                createTv(userMail,comment,date);
 
 
             } else {
-                Toast.makeText(CommentActivity.this, "Lütfen boş bırakmayın", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CommentActivity.this, "Please don't leave blank.", Toast.LENGTH_SHORT).show();
             }
 
         }

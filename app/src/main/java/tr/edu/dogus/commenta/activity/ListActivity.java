@@ -45,7 +45,7 @@ public class ListActivity extends AppCompatActivity {
         Log.i("INFO", "HAZIR = "+ll);
 
         pd = new ProgressDialog(ListActivity.this);
-        pd.setMessage("Lütfen bekleyin.");
+        pd.setMessage("Loading");
         pd.show();
 
         RetroInterface retroInterface = RetroClient.getClient().create(RetroInterface.class);
@@ -60,7 +60,7 @@ public class ListActivity extends AppCompatActivity {
                     venueAdapter = new VenueAdapter(getApplicationContext(),venue);
                     lvPlaces.setAdapter(venueAdapter);
                 } else {
-                    Toast.makeText(getApplication(), "Veri alınamadı!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "Data not found!", Toast.LENGTH_SHORT).show();
                 }
                 pd.dismiss();
             }
@@ -68,7 +68,7 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<SearchResponse> call, Throwable t) {
                 pd.dismiss();
-                Toast.makeText(getApplicationContext(), "BAĞLANTI KURULAMADI", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Connection Failed!", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -92,8 +92,6 @@ public class ListActivity extends AppCompatActivity {
                 goToCommentActivity.putExtra("lng", lng);
                 goToCommentActivity.putExtra("distance", distance);
                 startActivity(goToCommentActivity);
-
-                Toast.makeText(ListActivity.this,"Distance: "+String.valueOf(distance),Toast.LENGTH_SHORT).show();
             }
         });
 

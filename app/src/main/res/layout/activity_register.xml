@@ -25,7 +25,7 @@
         <ImageView
             android:layout_width="260dp"
             android:layout_height="141dp"
-            android:src="@drawable/ekstra" />
+            android:src="@drawable/app_logo_small" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -30,11 +30,11 @@
             android:id="@+id/imageView"
             android:layout_width="260dp"
             android:layout_height="141dp"
-            android:src="@drawable/ekstra" />
+            android:src="@drawable/app_logo_small" />
 
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/eTemail"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginBottom="10dp"
@@ -48,7 +48,7 @@
 
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/eTpassword"
                 android:layout_width="fill_parent"
                 android:layout_height="45dp"
                 android:layout_marginBottom="10dp"
