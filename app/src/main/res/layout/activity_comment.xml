@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/commente_status_bar"
-        android:text="Yakındaki Mekanlar"
+        android:text=""
         android:paddingBottom="15dp"
         android:paddingTop="15dp"
         android:gravity="center_horizontal"
@@ -130,7 +130,7 @@
         android:layout_marginRight="15dp"
         android:background="#fff"
         android:ems="10"
-        android:hint="Yorum yap"
+        android:hint="Your comment"
         android:inputType="textPersonName"
         android:padding="15dp" />
 
@@ -141,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/commente_status_bar"
-        android:text="YORUM YAP"
+        android:text="Send Comment"
         android:textColor="@android:color/white"
         android:textStyle="bold" />
 

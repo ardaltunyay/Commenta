@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/commente_status_bar"
-        android:text="Yakındaki Mekanlar"
+        android:text="Places"
         android:paddingBottom="15dp"
         android:paddingTop="15dp"
         android:gravity="center_horizontal"
